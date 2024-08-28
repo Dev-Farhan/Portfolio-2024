@@ -56,27 +56,39 @@ export const PROJECTS = [
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    link: "https://github.com/Dev-Farhan/ECommerce-Website",
   },
   {
-    title: "Task Management App",
+    title: "Contact Management App",
     image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    technologies: ["Javascript", "Node.js", "Express.js", "MongoDB"],
+    link: "https://github.com/Dev-Farhan/Contact-Management-Application",
   },
   {
     title: "Portfolio Website",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    technologies: ["HTML", "CSS", "React", "Tailwind Css"],
+    link: "https://github.com/Dev-Farhan/Portfolio-2024",
   },
   {
-    title: "Blogging Platform",
+    title: "Real-Time Chat Application",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A real-time chat application that allows users to send and receive messages instantly. Features include user authentication, chat rooms, and real-time notifications. The application is built with a responsive UI and supports multiple users in different chat rooms simultaneously.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    link: "https://github.com/Dev-Farhan/Real-Time-Chat-App",
   },
 ];
 

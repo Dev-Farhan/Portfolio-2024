@@ -14,7 +14,13 @@ const Projects = () => {
       </motion.h1>
       <div>
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+          <a
+            key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mb-8 flex flex-wrap lg:justify-center"
+          >
             <div className="w-full lg:w-1/4">
               <motion.img
                 whileInView={{ opacity: 1, x: 0 }}
@@ -44,7 +50,7 @@ const Projects = () => {
                 </span>
               ))}
             </motion.div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
