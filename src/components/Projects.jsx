@@ -1,7 +1,13 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false); // state to toggle between showing 4 or all projects
+
+  // Limit the number of projects displayed initially to 4
+  const displayedProjects = showAll ? PROJECTS : PROJECTS.slice(0, 4);
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h1
@@ -13,7 +19,7 @@ const Projects = () => {
         Projects
       </motion.h1>
       <div>
-        {PROJECTS.map((project, index) => (
+        {displayedProjects.map((project, index) => (
           <a
             key={index}
             href={project.link}
@@ -53,6 +59,24 @@ const Projects = () => {
           </a>
         ))}
       </div>
+      {/* Show "View All" button only if there are more than 4 projects */}
+      {PROJECTS.length > 4 && !showAll && (
+        <button
+          onClick={() => setShowAll(true)}
+          className="mt-4 mx-auto block px-6 py-2 border border-white text-white text-xs hover:border-transparent hover:bg-purple-900 hover:transition-all hover:ease-in-out rounded"
+        >
+          View All
+        </button>
+      )}
+      {/* Show "View Less" button if all projects are displayed */}
+      {showAll && (
+        <button
+          onClick={() => setShowAll(false)}
+          className="mt-4 mx-auto block px-6 py-2 border border-white text-white text-xs hover:border-transparent hover:bg-purple-900 hover:transition-all hover:ease-in-out rounded"
+        >
+          View Less
+        </button>
+      )}
     </div>
   );
 };

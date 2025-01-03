@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.jpg";
+import project1 from "../assets/projects/bazario.jpg";
 import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project3 from "../assets/projects/portfolio.jpg";
+import project4 from "../assets/projects/imdb-clone.jpg";
 
 export const HERO_CONTENT = `I'm a Full-Stack MERN Developer with over 6 months of experience in building and optimizing web applications. My skill set spans across front-end and back-end development, allowing me to create seamless, efficient, and user-friendly solutions. I’m passionate about coding, continuously learning, and eager to take on new challenges that push the boundaries of technology.`;
 
@@ -51,12 +51,12 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Bazario : E-Commerce Shopping Website",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    link: "https://github.com/Dev-Farhan/ECommerce-Website",
+      "An e-commerce website built with React and Tailwind CSS, using the FakeStore API for dynamic product data fetching and a responsive shopping experience.",
+    technologies: ["HTML", "CSS", "React", "TailwindCss"],
+    link: "https://bazario-shop-smart.netlify.app/",
   },
   {
     title: "Contact Management App",
@@ -72,23 +72,15 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Tailwind Css"],
-    link: "https://github.com/Dev-Farhan/Portfolio-2024",
+    link: "https://dev-farhan-portfolio.vercel.app/",
   },
   {
-    title: "Real-Time Chat Application",
+    title: "Movies (TMDB) Application",
     image: project4,
     description:
-      "A real-time chat application that allows users to send and receive messages instantly. Features include user authentication, chat rooms, and real-time notifications. The application is built with a responsive UI and supports multiple users in different chat rooms simultaneously.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "React",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-    ],
-    link: "https://github.com/Dev-Farhan/Real-Time-Chat-App",
+      "Build a clone of TMDB using ReactJS, showcasing strong frontend development skills and attention to detail in creating a user-friendly interface for browsing and searching popular movies, top rated Movie, and viewing ratings.",
+    technologies: ["HTML", "CSS", "Javascript", "React"],
+    link: "https://imdb-clone-farhan.netlify.app/",
   },
 ];
 

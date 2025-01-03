@@ -24,7 +24,7 @@ const Navbar = () => {
         >
           <FaGithub />
         </a>
-        <a
+        {/* <a
           href="https://twitter.com/your-username"
           target="_blank"
           rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
         >
           <FaInstagram />
-        </a>
+        </a> */}
       </div>
     </nav>
   );
