@@ -87,5 +87,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "143, Rajkumar Nagar Baank near Sirpur lake, Indore",
   phoneNo: "+91 82340 34564 ",
-  email: "mohd.farhan8234@gmail.com",
+  email: "mohdfarhan0678@gmail.com",
 };
